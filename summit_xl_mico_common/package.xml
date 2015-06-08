@@ -1,0 +1,23 @@
+<package>
+  <name>summit_xl_mico_common</name>
+  <version>1.0.0</version>
+  <description>URDF description of the Summit XL / XL HL platform with Kinova Mico arm for robot and simulation.</description>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/summit_xl_mico_common</url>
+  <url type="bugtracker">https://github.com/RobotnikAutomation/summit_xl_mico_common/issues</url>
+
+  <author email="info@robotnik.es">Robotnik</author>
+
+  <maintainer email="info@robotnik.es">Dani Carbonell</maintainer>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>summit_xl_mico_description</run_depend>
+  <run_depend>summit_xl_pad</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
