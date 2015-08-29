@@ -18,8 +18,9 @@
 	<xacro:include filename="$(find robotnik_sensors)/urdf/all_sensors.urdf.xacro" />
 
 	<!-- Import Mico Arm -->
-	<xacro:include filename="$(find mico_description)/robots/mico_arm.urdf.xacro" />
-    
+	<!-- xacro:include filename="$(find mico_description)/robots/mico_arm.urdf.xacro" /-->
+	<xacro:include filename="$(find mico_description)/robots/mico_arm_summit_xl.urdf.xacro" />
+	    
  
 	<!-- ***************** -->
 	<!-- Global parameters -->
