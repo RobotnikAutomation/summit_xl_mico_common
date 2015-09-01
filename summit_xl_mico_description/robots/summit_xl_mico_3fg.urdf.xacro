@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <robot name="summit_xl_mico" xmlns:xacro="http://www.ros.org/wiki/xacro"> 
 
-
 	<!-- ***************** -->
 	<!-- Imported elements -->
 	<!-- ***************** -->
@@ -19,8 +18,11 @@
 
 	<!-- Import Mico Arm -->	
 	<xacro:include filename="$(find mico_description)/robots/mico_arm_3fg_summit_xl.urdf.xacro" />
-	    
- 
+	
+	<!-- Porting structure -->
+	<xacro:include filename="$(find summit_xl_description)/urdf/structures/structure_ptz_rgbd_gps.urdf.xacro" />
+
+	     
 	<!-- ***************** -->
 	<!-- Global parameters -->
 	<!-- ***************** -->
@@ -69,32 +71,38 @@
 		<origin xyz="-${wheel_offset_x} -${wheel_offset_y} ${wheel_offset_z}" rpy="0 0 0"/>
 	</xacro:rubber_wheel>
 
+    <!-- STRUCTURES -->
+    <xacro:structure name="ptz_rgbd_gps" parent="base_link">
+		<origin xyz="0.0 0 0.0" rpy="0 0 0"/>		
+    </xacro:structure>
 
+	<!-- SENSORS -->    
+	<xacro:sensor_hokuyo_utm30lx name="hokuyo" parent="base_link">
+		<origin xyz="0.290 0.0 0.260" rpy="0 0 0"/>
+	</xacro:sensor_hokuyo_utm30lx>
 
-	<!-- SENSORS -->
-
-    
-	<!-- xacro:sensor_hokuyo_utm30lx name="hokuyo" parent="base_link">
-		<origin xyz="0.0 0.0 0.33" rpy="0 0 0"/>
-	</xacro:sensor_hokuyo_utm30lx -->
+	<xacro:sensor_axis name="camera" parent="base_link">
+		<origin xyz="-0.231 0 0.688" rpy="0 ${PI} 0"/>		
+	</xacro:sensor_axis>
   
 <!--
 	<xacro:sensor_hokuyo_urg04lx name="hokuyo1" parent="base_link">
 		<origin xyz="-0.1 0.0 0.33" rpy="0 0 0"/>
 	</xacro:sensor_hokuyo_urg04lx>
 -->
-    
-	<!-- xacro:sensor_axis name="camera" parent="base_link">
-		<origin xyz="0.19 0 0.17" rpy="0 ${15*PI/180} 0"/>
-	</xacro:sensor_axis -->
-  
+      
 	<xacro:sensor_imu name="imu" parent="base_link">
 		<origin xyz="-0.18 0.0 0.170" rpy="0 0 0"/>
 	</xacro:sensor_imu>
   
 	<xacro:sensor_gps name="gps" parent="base_link">
-		<origin xyz="-0.22 0 0.275" rpy="0 0 0"/>
+		<origin xyz="-0.203 -0.244 0.518" rpy="0 0 0"/>
 	</xacro:sensor_gps>
+
+	<xacro:sensor_kinectv2 name="kinectv2" parent="base_link">
+		<!-- origin xyz="-0.199 0.0 0.767" rpy="0 0 0"/ -->
+		<origin xyz="-0.1 0.0 0.0" rpy="0 0 ${-PI/2}"/>
+	</xacro:sensor_kinectv2>
 	
 <!--
 	<xacro:sensor_asus_xtion_pro name="xtion_pro" parent="base_link">
