@@ -86,7 +86,7 @@
     <disable_collisions link1="back_left_wheel" link2="front_left_wheel" reason="Never" />
     <disable_collisions link1="back_left_wheel" link2="front_right_wheel" reason="Never" />
     <disable_collisions link1="back_left_wheel" link2="gps_link" reason="Never" />
-    <disable_collisions link1="back_left_wheel" link2="hokuyo_laser_link" reason="Never" />
+    <disable_collisions link1="back_left_wheel" link2="hokuyo_base_laser_link" reason="Never" />
     <disable_collisions link1="back_left_wheel" link2="imu_link" reason="Never" />
     <disable_collisions link1="back_left_wheel" link2="kinectv2_link" reason="Never" />
     <disable_collisions link1="back_left_wheel" link2="mico_link_1" reason="Never" />
@@ -102,7 +102,7 @@
     <disable_collisions link1="back_right_wheel" link2="front_left_wheel" reason="Never" />
     <disable_collisions link1="back_right_wheel" link2="front_right_wheel" reason="Never" />
     <disable_collisions link1="back_right_wheel" link2="gps_link" reason="Never" />
-    <disable_collisions link1="back_right_wheel" link2="hokuyo_laser_link" reason="Never" />
+    <disable_collisions link1="back_right_wheel" link2="hokuyo_base_laser_link" reason="Never" />
     <disable_collisions link1="back_right_wheel" link2="imu_link" reason="Never" />
     <disable_collisions link1="back_right_wheel" link2="kinectv2_link" reason="Never" />
     <disable_collisions link1="back_right_wheel" link2="mico_link_1" reason="Never" />
@@ -111,14 +111,13 @@
     <disable_collisions link1="back_right_wheel" link2="mico_link_4" reason="Never" />
     <disable_collisions link1="back_right_wheel" link2="mico_link_5" reason="Never" />
     <disable_collisions link1="back_right_wheel" link2="mico_link_base" reason="Never" />
-    <disable_collisions link1="back_right_wheel" link2="mico_link_hand" reason="Never" />
     <disable_collisions link1="back_right_wheel" link2="ptz_rgbd_gps_link" reason="Never" />
     <disable_collisions link1="base_footprint" link2="base_link" reason="Adjacent" />
     <disable_collisions link1="base_footprint" link2="camera_link" reason="Never" />
     <disable_collisions link1="base_footprint" link2="front_left_wheel" reason="Never" />
     <disable_collisions link1="base_footprint" link2="front_right_wheel" reason="Never" />
     <disable_collisions link1="base_footprint" link2="gps_link" reason="Never" />
-    <disable_collisions link1="base_footprint" link2="hokuyo_laser_link" reason="Never" />
+    <disable_collisions link1="base_footprint" link2="hokuyo_base_laser_link" reason="Never" />
     <disable_collisions link1="base_footprint" link2="imu_link" reason="Never" />
     <disable_collisions link1="base_footprint" link2="kinectv2_link" reason="Never" />
     <disable_collisions link1="base_footprint" link2="mico_link_1" reason="Never" />
@@ -136,7 +135,7 @@
     <disable_collisions link1="base_link" link2="front_left_wheel" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="front_right_wheel" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="gps_link" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="hokuyo_laser_link" reason="Adjacent" />
+    <disable_collisions link1="base_link" link2="hokuyo_base_laser_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="imu_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="kinectv2_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="mico_link_1" reason="Default" />
@@ -146,9 +145,9 @@
     <disable_collisions link1="camera_link" link2="front_left_wheel" reason="Never" />
     <disable_collisions link1="camera_link" link2="front_right_wheel" reason="Never" />
     <disable_collisions link1="camera_link" link2="gps_link" reason="Never" />
-    <disable_collisions link1="camera_link" link2="hokuyo_laser_link" reason="Never" />
+    <disable_collisions link1="camera_link" link2="hokuyo_base_laser_link" reason="Never" />
     <disable_collisions link1="camera_link" link2="imu_link" reason="Never" />
-    <disable_collisions link1="camera_link" link2="kinectv2_link" reason="Never" />
+    <disable_collisions link1="camera_link" link2="kinectv2_link" reason="Default" />
     <disable_collisions link1="camera_link" link2="mico_link_1" reason="Never" />
     <disable_collisions link1="camera_link" link2="mico_link_2" reason="Never" />
     <disable_collisions link1="camera_link" link2="mico_link_3" reason="Never" />
@@ -156,47 +155,49 @@
     <disable_collisions link1="camera_link" link2="ptz_rgbd_gps_link" reason="Default" />
     <disable_collisions link1="front_left_wheel" link2="front_right_wheel" reason="Never" />
     <disable_collisions link1="front_left_wheel" link2="gps_link" reason="Never" />
-    <disable_collisions link1="front_left_wheel" link2="hokuyo_laser_link" reason="Never" />
+    <disable_collisions link1="front_left_wheel" link2="hokuyo_base_laser_link" reason="Never" />
     <disable_collisions link1="front_left_wheel" link2="imu_link" reason="Never" />
     <disable_collisions link1="front_left_wheel" link2="kinectv2_link" reason="Never" />
     <disable_collisions link1="front_left_wheel" link2="mico_link_1" reason="Never" />
     <disable_collisions link1="front_left_wheel" link2="mico_link_2" reason="Never" />
     <disable_collisions link1="front_left_wheel" link2="mico_link_3" reason="Never" />
     <disable_collisions link1="front_left_wheel" link2="mico_link_4" reason="Never" />
+    <disable_collisions link1="front_left_wheel" link2="mico_link_5" reason="Never" />
     <disable_collisions link1="front_left_wheel" link2="mico_link_base" reason="Never" />
     <disable_collisions link1="front_left_wheel" link2="ptz_rgbd_gps_link" reason="Never" />
     <disable_collisions link1="front_right_wheel" link2="gps_link" reason="Never" />
-    <disable_collisions link1="front_right_wheel" link2="hokuyo_laser_link" reason="Never" />
+    <disable_collisions link1="front_right_wheel" link2="hokuyo_base_laser_link" reason="Never" />
     <disable_collisions link1="front_right_wheel" link2="imu_link" reason="Never" />
     <disable_collisions link1="front_right_wheel" link2="kinectv2_link" reason="Never" />
     <disable_collisions link1="front_right_wheel" link2="mico_link_1" reason="Never" />
     <disable_collisions link1="front_right_wheel" link2="mico_link_2" reason="Never" />
     <disable_collisions link1="front_right_wheel" link2="mico_link_3" reason="Never" />
     <disable_collisions link1="front_right_wheel" link2="mico_link_4" reason="Never" />
-    <disable_collisions link1="front_right_wheel" link2="mico_link_5" reason="Never" />
     <disable_collisions link1="front_right_wheel" link2="mico_link_base" reason="Never" />
     <disable_collisions link1="front_right_wheel" link2="ptz_rgbd_gps_link" reason="Never" />
-    <disable_collisions link1="gps_link" link2="hokuyo_laser_link" reason="Never" />
+    <disable_collisions link1="gps_link" link2="hokuyo_base_laser_link" reason="Never" />
     <disable_collisions link1="gps_link" link2="imu_link" reason="Never" />
     <disable_collisions link1="gps_link" link2="kinectv2_link" reason="Never" />
     <disable_collisions link1="gps_link" link2="mico_link_1" reason="Never" />
     <disable_collisions link1="gps_link" link2="mico_link_2" reason="Never" />
     <disable_collisions link1="gps_link" link2="mico_link_3" reason="Never" />
+    <disable_collisions link1="gps_link" link2="mico_link_4" reason="Never" />
     <disable_collisions link1="gps_link" link2="mico_link_base" reason="Never" />
     <disable_collisions link1="gps_link" link2="ptz_rgbd_gps_link" reason="Default" />
-    <disable_collisions link1="hokuyo_laser_link" link2="imu_link" reason="Never" />
-    <disable_collisions link1="hokuyo_laser_link" link2="kinectv2_link" reason="Never" />
-    <disable_collisions link1="hokuyo_laser_link" link2="mico_link_1" reason="Default" />
-    <disable_collisions link1="hokuyo_laser_link" link2="mico_link_2" reason="Never" />
-    <disable_collisions link1="hokuyo_laser_link" link2="mico_link_3" reason="Never" />
-    <disable_collisions link1="hokuyo_laser_link" link2="mico_link_4" reason="Never" />
-    <disable_collisions link1="hokuyo_laser_link" link2="mico_link_base" reason="Never" />
-    <disable_collisions link1="hokuyo_laser_link" link2="ptz_rgbd_gps_link" reason="Never" />
+    <disable_collisions link1="hokuyo_base_laser_link" link2="imu_link" reason="Never" />
+    <disable_collisions link1="hokuyo_base_laser_link" link2="kinectv2_link" reason="Never" />
+    <disable_collisions link1="hokuyo_base_laser_link" link2="mico_link_1" reason="Default" />
+    <disable_collisions link1="hokuyo_base_laser_link" link2="mico_link_2" reason="Never" />
+    <disable_collisions link1="hokuyo_base_laser_link" link2="mico_link_3" reason="Never" />
+    <disable_collisions link1="hokuyo_base_laser_link" link2="mico_link_4" reason="Never" />
+    <disable_collisions link1="hokuyo_base_laser_link" link2="mico_link_base" reason="Never" />
+    <disable_collisions link1="hokuyo_base_laser_link" link2="ptz_rgbd_gps_link" reason="Never" />
     <disable_collisions link1="imu_link" link2="kinectv2_link" reason="Never" />
     <disable_collisions link1="imu_link" link2="mico_link_1" reason="Never" />
     <disable_collisions link1="imu_link" link2="mico_link_2" reason="Never" />
     <disable_collisions link1="imu_link" link2="mico_link_3" reason="Never" />
     <disable_collisions link1="imu_link" link2="mico_link_4" reason="Never" />
+    <disable_collisions link1="imu_link" link2="mico_link_5" reason="Never" />
     <disable_collisions link1="imu_link" link2="mico_link_base" reason="Never" />
     <disable_collisions link1="imu_link" link2="mico_link_finger_1" reason="Never" />
     <disable_collisions link1="imu_link" link2="mico_link_finger_2" reason="Never" />
@@ -207,10 +208,8 @@
     <disable_collisions link1="kinectv2_link" link2="mico_link_2" reason="Never" />
     <disable_collisions link1="kinectv2_link" link2="mico_link_3" reason="Never" />
     <disable_collisions link1="kinectv2_link" link2="mico_link_4" reason="Never" />
-    <disable_collisions link1="kinectv2_link" link2="mico_link_5" reason="Never" />
     <disable_collisions link1="kinectv2_link" link2="mico_link_base" reason="Never" />
-    <disable_collisions link1="kinectv2_link" link2="mico_link_hand" reason="Never" />
-    <disable_collisions link1="kinectv2_link" link2="ptz_rgbd_gps_link" reason="Never" />
+    <disable_collisions link1="kinectv2_link" link2="ptz_rgbd_gps_link" reason="Default" />
     <disable_collisions link1="mico_link_1" link2="mico_link_2" reason="Adjacent" />
     <disable_collisions link1="mico_link_1" link2="mico_link_3" reason="Never" />
     <disable_collisions link1="mico_link_1" link2="mico_link_4" reason="Never" />
