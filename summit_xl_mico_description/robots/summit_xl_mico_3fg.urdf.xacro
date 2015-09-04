@@ -100,8 +100,9 @@
 	</xacro:sensor_gps>
 
 	<xacro:sensor_kinectv2 name="kinectv2" parent="base_link">
-		<!-- origin xyz="-0.199 0.0 0.767" rpy="0 0 0"/ -->
-		<origin xyz="-0.1 0.0 0.0" rpy="0 0 ${-PI/2}"/>
+		<!-- origin xyz="-0.199 0.0 0.767" rpy="0 0 0"/ -->		
+		<!-- origin xyz="-0.232 0.0 0.725" rpy="0 0 ${-PI/2}"/ -->
+                <origin xyz="-0.232 0.0 0.725" rpy="0 0 0" />
 	</xacro:sensor_kinectv2>
 	
 <!--
